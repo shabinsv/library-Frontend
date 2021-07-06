@@ -1,0 +1,15 @@
+
+<h5>Login</h5>
+  <form #userlogin="ngForm" (ngSubmit)="loginUser()">
+    <small class="text-danger" [class.d-none]="email.valid || email.touched">Email is Invalid</small>
+    <br>
+      <label for="">Username</label>
+      <input type="text" id="user" name="username"  [(ngModel)]="user.username" #email="ngModel" [class.is-invalid]="email.invalid && email.touched" pattern="^[a-z0-9.%+]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+      <br>
+      <br>
+      <label for=""> Password</label>
+      <input type="password" id="pass" style="margin-left: 17px;" name="password" [(ngModel)]="user.password" minlength="6" required>
+      <br>
+      <br>
+      <button type="submit" [disabled]="userlogin.form.invalid">Login</button>
+  </form>

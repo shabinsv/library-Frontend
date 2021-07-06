@@ -1,0 +1,46 @@
+<div class="card-header head">
+    <h3>{{title}}</h3>
+ </div>
+<div class="col col-sm-10 addform">                                                                              
+    <form #addbook="ngForm" (ngSubmit)="AddBook()">
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="formGroupExampleInput">Book Name</label>
+            <input type="text" class="form-control" id="name" placeholder="" name="title" value="" [(ngModel)]="book.title"  minlength="1" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="formGroupExampleInput">Author</label>
+            <input type="text" class="form-control" id="author" placeholder="" name="author" value="" [(ngModel)]="book.author"  minlength="1" required>
+          </div>
+          </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Genre</label>
+          <input type="text" class="form-control" id="genre" placeholder="" name="genre" [(ngModel)]="book.genre"  minlength="1" required>
+         
+            <label for="exampleFormControlTextarea1">About Book</label>
+             <input type="text" class="form-control" id="about" placeholder="" name="about" [(ngModel)]="book.about"  minlength="1" required>
+            
+          </div>
+        <div class="form-group">
+          <label for="inputAddress2">Image Url</label>
+          <input type="text" class="form-control" name="image" [(ngModel)]="book.image"  minlength="1" required>
+        </div>
+          
+         <button type="submit" class="btn btn-danger" [disabled]="addbook.form.invalid">Add Book</button>
+      </form>
+</div>
+
+<div class="container" id="footer">
+  <div class="row">
+    <div class="col col-sm-12">
+      
+      <h1>Follow Us</h1>
+      <div class="btn-group">
+       <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+	   <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+	   <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+      </div>
+      
+    </div>
+  </div>
+</div>

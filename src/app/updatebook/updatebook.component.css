@@ -1,0 +1,31 @@
+
+      
+  .btn-twitter {background-color:#4099FF;color:#fff;}
+  .btn-facebook {background-color:#3B5998;color:#fff;}
+  .btn-google-plus {background-color:#d34836;color:#fff;}
+  
+  .btn-twitter:hover {background-color:#3088FF;color:#62BBFF;}
+  .btn-facebook:hover {background-color:#2A4998;color:#4C6BBA;}
+  .btn-google-plus:hover {background-color:#C23836;color:#E45A58;}
+  .addform{
+    margin-top: 65px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    border: 3px solid white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(61, 55, 55);
+    color: white;
+  }
+  .addform input{
+    margin-bottom: 13px;
+  }
+  .head{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+  

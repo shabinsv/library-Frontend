@@ -1,0 +1,10 @@
+
+<div class='card-header'>
+    <h1>{{title}}</h1>
+    <a routerLink='login' *ngIf="!auth.LoggedIn()">Login</a>
+    <a routerLink='books'>Books</a>
+    <a routerLink='authors'>Authors</a>
+    <a routerLink='addbook' *ngIf="auth.LoggedIn()">Add Book</a>
+    <a routerLink='addauthor' *ngIf="auth.LoggedIn()">Add Author</a>
+    <a routerLink='' *ngIf="auth.LoggedIn()" (click)=logoutUser()>LogOut</a>
+</div>
